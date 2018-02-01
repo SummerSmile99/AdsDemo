@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
-  s.name         = "MobGiAdSDK"
-  s.version      = "2.7.0"
+  s.name         = "AdsDemo"
+  s.version      = "2.8.0"
   s.summary      = "Mobgi Ad SDK"
   s.homepage     = "http://github.com/xlf999/AdsDemo"
   s.license      = "MIT"
