@@ -1,0 +1,6 @@
+framework module AdxAdsComponent {
+  umbrella header "AdxAdsComponent.h"
+
+  export *
+  module * { export * }
+}

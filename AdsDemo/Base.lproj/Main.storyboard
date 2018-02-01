@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Native Ads View Controller-->
+        <scene sceneID="JLl-kh-7hQ">
+            <objects>
+                <viewController id="feO-Ui-DRp" customClass="NativeAdsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Yce-Sd-6Eb"/>
+                        <viewControllerLayoutGuide type="bottom" id="MNx-Rj-wD0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ajn-Ab-KIj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="xJb-b9-ECw">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="feO-Ui-DRp" id="Gv6-e7-tVO"/>
+                                    <outlet property="delegate" destination="feO-Ui-DRp" id="Fh8-HF-2ut"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="xJb-b9-ECw" secondAttribute="trailing" id="8RT-Yo-pWr"/>
+                            <constraint firstItem="xJb-b9-ECw" firstAttribute="top" secondItem="Yce-Sd-6Eb" secondAttribute="bottom" id="KBa-hb-brq"/>
+                            <constraint firstItem="xJb-b9-ECw" firstAttribute="leading" secondItem="Ajn-Ab-KIj" secondAttribute="leading" id="Qlu-iS-kkK"/>
+                            <constraint firstItem="MNx-Rj-wD0" firstAttribute="top" secondItem="xJb-b9-ECw" secondAttribute="bottom" id="weU-wu-AeR"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="xJb-b9-ECw" id="apd-vz-Van"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fml-rV-NUN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="360" y="999"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UqQ-tR-WVr">
+                                <rect key="frame" x="20" y="161" width="135" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="0.50196081400000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Video initialize"/>
+                                <connections>
+                                    <action selector="initvd:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EYT-UB-ndE"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Video status" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fyg-ay-in3">
+                                <rect key="frame" x="20" y="36" width="135" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Interstitial status" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WOA-mU-pic">
+                                <rect key="frame" x="166" y="36" width="135" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Ud-fn-egV">
+                                <rect key="frame" x="20" y="221" width="135" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="0.50196081400000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal" title="Check video ststus"/>
+                                <connections>
+                                    <action selector="checkVideoAdStatus:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gAs-9e-jOk"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Reward status" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ROI-pQ-ban">
+                                <rect key="frame" x="20" y="101" width="135" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xZq-Ym-yVZ">
+                                <rect key="frame" x="20" y="279" width="135" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="0.50196081400000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Video show"/>
+                                <connections>
+                                    <action selector="show:" destination="BYZ-38-t0r" eventType="touchUpInside" id="E9X-bK-9SP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EdK-wV-R1b">
+                                <rect key="frame" x="166" y="161" width="135" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="0.50196081400000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Interstitial preload"/>
+                                <connections>
+                                    <action selector="preloadCYClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7dL-Aa-T29"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RpD-Uf-aP1">
+                                <rect key="frame" x="166" y="101" width="135" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="0.50196081400000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Interstitial initialize"/>
+                                <connections>
+                                    <action selector="startCYClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="a6l-AH-UPc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kti-lm-432">
+                                <rect key="frame" x="166" y="277" width="135" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="0.50196081400000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Interstitial show"/>
+                                <connections>
+                                    <action selector="showCYClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oRU-hA-Yao"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C4g-wW-pag">
+                                <rect key="frame" x="166" y="221" width="135" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="0.50196081400000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <state key="normal" title="Check interstitial status"/>
+                                <connections>
+                                    <action selector="checkCYClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mx6-uP-Q1g"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s6Y-ZD-yBT">
+                                <rect key="frame" x="164" y="335" width="137" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.28655031323432922" green="1" blue="0.55560022592544556" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="交叉推广广告！"/>
+                                <connections>
+                                    <segue destination="4fi-bh-J7R" kind="presentation" id="k8n-sN-w0F"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ynX-qK-sAM">
+                                <rect key="frame" x="20" y="335" width="135" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.28655031323432922" green="1" blue="0.55560022592544556" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="原生广告"/>
+                                <connections>
+                                    <segue destination="feO-Ui-DRp" kind="presentation" id="Ae5-lu-v1y"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <connections>
+                        <outlet property="interstitialAdStatusLabel" destination="WOA-mU-pic" id="2Le-UB-TEU"/>
+                        <outlet property="rewardStatusLabel" destination="ROI-pQ-ban" id="E6E-2X-fTf"/>
+                        <outlet property="videoAdStatusLabel" destination="fyg-ay-in3" id="OeG-9y-Tma"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="360" y="331"/>
+        </scene>
+        <!--Custom Ad DemoVC View Controller-->
+        <scene sceneID="zcN-MH-NOV">
+            <objects>
+                <viewController id="4fi-bh-J7R" customClass="CustomAdDemoVCViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uNT-OA-gjn"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ztu-qg-VHT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="veR-Zc-NZh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cy0-uZ-E6I">
+                                <rect key="frame" x="38" y="33" width="178" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.28655031323432922" green="1" blue="0.55560022592544556" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="返回上一页！"/>
+                                <connections>
+                                    <action selector="goToLastPage:" destination="4fi-bh-J7R" eventType="touchUpInside" id="F4o-ja-h2R"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OND-Sw-Ibe">
+                                <rect key="frame" x="32" y="162" width="190" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.28655031323432922" green="1" blue="0.55560022592544556" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="自定义banner广告演示！"/>
+                                <connections>
+                                    <action selector="showCustomAd:" destination="4fi-bh-J7R" eventType="touchUpInside" id="Oqc-og-2bU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="73f-vj-G3L">
+                                <rect key="frame" x="26" y="217" width="243" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.28655031323432922" green="1" blue="0.55560022592544556" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="自定义banner广告演示！（带模版）"/>
+                                <connections>
+                                    <action selector="showTemmplateCustomAd:" destination="4fi-bh-J7R" eventType="touchUpInside" id="wjP-xM-DCR"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mTX-kF-5kf">
+                                <rect key="frame" x="20" y="287" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pPL-rF-owh">
+                                        <rect key="frame" x="8" y="8" width="112" height="75"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="des" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a6L-lJ-gy2">
+                                        <rect key="frame" x="8" y="99" width="224" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.28655031323432922" green="1" blue="0.55560022592544556" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="clC-MT-gko">
+                                        <rect key="frame" x="128" y="35" width="98" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.28655031323432922" green="1" blue="0.55560022592544556" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.99754327535629272" green="0.87171816825866699" blue="0.10695928335189819" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4LT-L3-QQS">
+                                <rect key="frame" x="32" y="100" width="190" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.28655031323432922" green="1" blue="0.55560022592544556" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="展示橱窗广告！"/>
+                                <connections>
+                                    <action selector="displayWindowAd:" destination="4fi-bh-J7R" eventType="touchUpInside" id="G3S-BZ-vUm"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <connections>
+                        <outlet property="customAdDesc" destination="a6L-lJ-gy2" id="r4v-v8-WUD"/>
+                        <outlet property="customAdImageview" destination="pPL-rF-owh" id="ODZ-0b-R4E"/>
+                        <outlet property="customAdTitile" destination="clC-MT-gko" id="2Ri-Fc-ttw"/>
+                        <outlet property="customAdView" destination="mTX-kF-5kf" id="nef-ay-kV0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="82h-Me-PsJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1031" y="331"/>
+        </scene>
+        <!--Native View Controller-->
+        <scene sceneID="PGV-JE-m69">
+            <objects>
+                <viewController storyboardIdentifier="nativeadviewcontroller" id="Nw3-bM-9ee" customClass="NativeViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7xz-DN-1DZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="FKi-8g-XDf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="u33-rq-eBT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="广告位id" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f3d-7d-Qn6">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="Gsi-aF-sYG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zO3-xn-FOO">
+                                <rect key="frame" x="0.0" y="0.0" width="0.0" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" text="点击获取广告按钮拉取原生广告数据，点击刷新广告按钮进行渲染" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="F2K-hx-ltN">
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="NYN-05-2e0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n0J-ye-dph">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="dHf-nL-PEr"/>
+                                </constraints>
+                                <state key="normal" title="获取广告"/>
+                                <connections>
+                                    <action selector="loadAd:" destination="Nw3-bM-9ee" eventType="touchUpInside" id="EHF-m2-lJa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4SL-Jr-m5P">
+                                <state key="normal" title="刷新广告">
+                                    <color key="titleColor" red="0.2784313725" green="0.45098039220000002" blue="0.68627450980000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="attach:" destination="Nw3-bM-9ee" eventType="touchUpInside" id="JdY-Z9-yM5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="02B-As-9Kg">
+                                <rect key="frame" x="245" y="502" width="90" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="返回上一页！"/>
+                                <connections>
+                                    <action selector="returnLastPage:" destination="Nw3-bM-9ee" eventType="touchUpInside" id="keb-j3-MRg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="4SL-Jr-m5P" firstAttribute="leading" secondItem="n0J-ye-dph" secondAttribute="trailing" constant="44" id="6L2-YU-t7z"/>
+                            <constraint firstItem="4SL-Jr-m5P" firstAttribute="trailing" secondItem="F2K-hx-ltN" secondAttribute="trailing" id="DhD-h5-93g"/>
+                            <constraint firstItem="zO3-xn-FOO" firstAttribute="centerY" secondItem="f3d-7d-Qn6" secondAttribute="centerY" id="HBB-CW-WEg"/>
+                            <constraint firstItem="F2K-hx-ltN" firstAttribute="top" secondItem="f3d-7d-Qn6" secondAttribute="bottom" constant="30" id="Im8-yv-9oA"/>
+                            <constraint firstItem="f3d-7d-Qn6" firstAttribute="leading" secondItem="u33-rq-eBT" secondAttribute="leadingMargin" constant="15" id="J3m-1B-S4i"/>
+                            <constraint firstItem="f3d-7d-Qn6" firstAttribute="top" secondItem="7xz-DN-1DZ" secondAttribute="bottom" constant="25" id="NJ4-Ob-Swy"/>
+                            <constraint firstItem="4SL-Jr-m5P" firstAttribute="width" secondItem="n0J-ye-dph" secondAttribute="width" id="SJ7-OF-ldl"/>
+                            <constraint firstItem="4SL-Jr-m5P" firstAttribute="height" secondItem="n0J-ye-dph" secondAttribute="height" id="Yhi-8C-Gdd"/>
+                            <constraint firstItem="4SL-Jr-m5P" firstAttribute="centerY" secondItem="n0J-ye-dph" secondAttribute="centerY" id="ajP-bC-SaJ"/>
+                            <constraint firstItem="zO3-xn-FOO" firstAttribute="leading" secondItem="f3d-7d-Qn6" secondAttribute="trailing" constant="22" id="hp4-Tr-edf"/>
+                            <constraint firstItem="F2K-hx-ltN" firstAttribute="leading" secondItem="f3d-7d-Qn6" secondAttribute="leading" id="iBx-aF-XCD"/>
+                            <constraint firstItem="n0J-ye-dph" firstAttribute="top" secondItem="F2K-hx-ltN" secondAttribute="bottom" constant="47" id="kbs-dM-ia0"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="zO3-xn-FOO" secondAttribute="trailing" constant="15" id="nYr-6U-ifp"/>
+                            <constraint firstItem="n0J-ye-dph" firstAttribute="leading" secondItem="F2K-hx-ltN" secondAttribute="leading" id="pcq-y8-22G"/>
+                            <constraint firstItem="zO3-xn-FOO" firstAttribute="trailing" secondItem="F2K-hx-ltN" secondAttribute="trailing" id="wdY-f0-f1r"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="02B-As-9Kg"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular">
+                            <mask key="subviews">
+                                <include reference="02B-As-9Kg"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="posTextField" destination="zO3-xn-FOO" id="ZMg-E8-izz"/>
+                        <outlet property="resultTV" destination="F2K-hx-ltN" id="AQF-d6-Ig8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LbL-Ud-P1b" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1925" y="1456"/>
+        </scene>
+    </scenes>
+</document>

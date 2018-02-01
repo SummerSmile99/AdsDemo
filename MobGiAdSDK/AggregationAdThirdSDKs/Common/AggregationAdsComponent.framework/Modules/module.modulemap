@@ -1,0 +1,6 @@
+framework module AggregationAdsComponent {
+  umbrella header "AggregationAdsComponent.h"
+
+  export *
+  module * { export * }
+}

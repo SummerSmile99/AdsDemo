@@ -1,0 +1,6 @@
+framework module CustomAdsModule {
+  umbrella header "CustomAdsModule.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,16 @@
+//
+//  AdsBasicFramework_PCH.pch
+//  AdsBasicFramework
+//
+//  Created by star.liao on 2017/5/23.
+//  Copyright © 2017年 com.idreamsky. All rights reserved.
+//
+
+#ifndef AdsBasicFramework_PCH_pch
+#define AdsBasicFramework_PCH_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#import "AdsBasicFramework+Namespace.h"
+
+#endif /* AdsBasicFramework_PCH_pch */

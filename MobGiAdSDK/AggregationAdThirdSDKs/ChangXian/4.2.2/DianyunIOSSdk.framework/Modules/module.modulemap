@@ -1,0 +1,6 @@
+framework module DianyunIOSSdk {
+  umbrella header "DianyunIOSSdk.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,6 @@
+framework module AdsBasicFramework {
+  umbrella header "AdsBasicFramework.h"
+
+  export *
+  module * { export * }
+}

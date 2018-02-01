@@ -1,0 +1,9 @@
+framework module NetStabilizer {
+  umbrella header "NetStabilizer.h"
+
+  export *
+  module * { export * }
+  
+  header "GNSApp.h"
+  link framework "Foundation"
+}

@@ -1,0 +1,6 @@
+framework module MGAdmobAdapter {
+  umbrella header "MGAdmobAdapter.h"
+
+  export *
+  module * { export * }
+}
